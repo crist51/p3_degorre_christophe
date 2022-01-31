@@ -1,0 +1,81 @@
+.new{/*animation new*/
+    animation-duration: 1s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.list_plat{/*anime plat*/
+    >:nth-child(1){
+        animation: translate_opacity 3000ms ease 0s 1 normal forwards;
+    }
+    >:nth-child(2){
+        animation: translate_opacity 3100ms ease 100ms 1 normal forwards;
+    }
+    >:nth-child(3){
+        animation: translate_opacity 3200ms ease 200ms 1 normal forwards;
+    }
+    >:nth-child(4){
+        animation: translate_opacity 3300ms ease 300ms 1 normal forwards;
+    }
+}
+@keyframes translate_opacity {
+    0% {
+      opacity: 0;
+      transform: translateY(5vh);/*55vh*/
+    }
+    50% {
+        opacity: 0.5;
+      }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+/*---------------------------------------------------------------------------------------------------*/
+.list_plat li{/*anime  btn plat*/
+    &:hover{
+        .btn_plat{
+            cursor: pointer;
+            .validate{
+                transform: translate(-50px);
+                transition:transform 2s;
+                width: 40px;
+                transition : width 1s ease 0s ;
+                i{
+                    transform: rotate(360deg);
+                    transition: transform 500ms;
+    
+                }
+            }
+        }
+    }
+    &:not(:hover){
+        .validate{
+            width: 0;
+            transition:transform 2s;
+            i{
+                transform: rotate(0deg);transition: transform 1s;
+            }
+        }
+    }
+}
+/*---------------------------------------------------------------------------------------------------*/
+header .marquee p{
+    animation: info-societe 30s linear $time-loader infinite normal forwards;
+}
+@keyframes info-societe {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-3250px);
+    }
+}

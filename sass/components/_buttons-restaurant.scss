@@ -1,0 +1,54 @@
+.list_plat li{
+    border-radius: 10px;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    .btn_plat{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        .btn_plat__info{
+            width: 100%;
+            padding: 0 0 0 25px;
+            overflow: hidden;
+            h3{/*nom du plat*/
+                margin:10px 0 10px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            h4{/*détail du plat*/
+                margin-top: 0px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        .btn_plat__price{
+            h3{
+                margin:10px 0 10px 0;
+                color: transparent !important;
+            }
+            h4{/*pix du plat*/
+                margin-top: 0px;
+            }
+        }
+        .validate{
+            position: relative;
+            width: 0;
+            left:50px;
+            background-color: #00fa9a6b;
+            padding: 0 5px 0 15px;
+            margin: 0 0 0 15px;
+            height: 70px;
+            i{       
+                color: white;
+                font-size:30px;
+                position: relative;
+                right: 20%;
+                top:30%;
+            }
+        }
+    }
+}

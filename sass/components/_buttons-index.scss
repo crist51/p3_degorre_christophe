@@ -1,0 +1,58 @@
+.midle__bottom ul li{
+    position: relative;
+    .bloc_food{
+        height: 100%;
+        margin-bottom: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        border-radius: 26px;
+        border:none;
+        box-shadow: 0px 11px 10px 2px rgba(0,0,0,0.5);
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 10px 25px 5px $colour-one;
+        }
+        >:first-child{/*contener img*/
+            height: 70%;
+            margin: 0;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .info_food{/*name of the restaurant and its area*/
+            margin: 20px 0 15px 0;
+            padding: 0 20px 0 20px;
+            display: flex;
+            justify-content: space-between;justify-content: space-between;
+            h3{
+                margin: 0;
+            }
+            p{
+                margin: 0;
+            }
+        } 
+    }
+    .new{
+        padding: 4px 6px 4px 6px !important;
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }  
+}
+@media screen and (min-width:950px){
+    .midle__bottom article ul li .bloc_food{
+        >:first-child{
+            height: 60% !important;
+        }
+        .info_food{
+            margin: 10px 0 10px 0;
+            h3,h4{
+                font-size: medium;
+            }
+        }
+    }
+}

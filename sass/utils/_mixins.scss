@@ -1,0 +1,9 @@
+
+@mixin reset{
+    margin: 0;
+    padding: 0;
+}
+@mixin loader-bordure{
+    border: 5px $colour-one double;
+    padding: 10px;
+}

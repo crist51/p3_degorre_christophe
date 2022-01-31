@@ -1,0 +1,14 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+meta affiche les icone AXESONE sur Internet explorer et Edges
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Pour faire fonctionner le MQueries
+
+<link rel="icon" type="image/png" href="../images/logo/ohmyfood@2x.svg">
+link logo dans la barre d'adresse
+
+filter: invert(100%)
+inverse le contraste
+
+/*transition-delay: 400ms; delais d'attente avent activation*/
+/*transform-origin: left;permet de reduire huste la droite*/

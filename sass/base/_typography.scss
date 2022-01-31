@@ -1,0 +1,76 @@
+@font-face { 	font-family: "shrikhand"; 	src: url("../../font/shrikhand-Regular.ttf"); }
+@font-face { 	font-family: "TheNautigal"; 	src: url("../../font/TheNautigal-Bold.ttf"); }
+@font-face { 	font-family: "Roboto"; 	src: url("../../font/RobotoSlab-VariableFont_wght.ttf"); }
+.new{
+    background-color: mediumaquamarine;
+    color: rgb(0, 139, 0);
+    text-align: right;
+    font: normal small Roboto, sans-serif, Arial !important;
+}
+/*------------------------------------------index------------------------------------------*/
+.midle__top{
+    color: black;
+    text-align: center;
+    h2{
+        font:bolder x-large Roboto, sans-serif, Arial;
+
+    }
+    p{
+        font:bold medium Roboto, sans-serif, Arial;
+    }
+}
+.midle__bottom{
+    h2{
+        font: bold x-large Roboto, sans-serif, Arial;
+    }
+    h3{
+        font: bold large Roboto, sans-serif, Arial;
+
+    }
+    p{
+        font: normal large Roboto, sans-serif, Arial;
+        color: $colour-dark;
+    }
+}
+/*------------------------------------------restaurent------------------------------------------*/
+.midle__left{
+    h1{
+        font: bold 28px shrikhand,sans-serif,Arial;/*-xlarge*/
+    }
+}
+.midle__right{
+    .midle__right__contener__meal_part{
+        width: 15%;
+        padding-bottom: 5px;
+        border-bottom: 2px #00fa9a6b solid;
+        h2{
+            font:bolder large Roboto, sans-serif, Arial;
+            color: #6d6d6d;
+        }
+    }
+    div{
+        h3{/*nom du plat*/
+            font: bolder medium Roboto, sans-serif, Arial;
+        }
+        h4{/*détail du plat*/
+            font: normal small sans-serif;
+        }
+        .btn_plat__price h4{/*pix du plat*/
+            font-weight: bold;
+        }
+    }
+}
+footer ul li {
+    font: normal medium  Roboto, sans-serif, Arial;
+    color: white;
+    a{
+        text-decoration: none;
+        color:white;
+    }
+}
+@media screen and (max-width:618px){
+    .midle__right h2{
+        text-align: center;
+    }
+}
+h6{display: none;}

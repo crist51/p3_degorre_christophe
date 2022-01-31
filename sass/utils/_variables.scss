@@ -1,0 +1,22 @@
+$colour-primari: black;
+$colour-white: #fff;
+$colour-invalid: #DB464B;
+
+
+$colour-btn: linear-gradient(0deg, rgb(190, 6, 190), pink);
+$colour-gris:#f2f2f2;
+
+$colour-one:#9356DC;
+$colour-two:#FF79DA;
+$colour-three:#99E2D0;
+
+$colour-dark:rgb(44, 44, 44);
+
+$time-loader:5s;
+
+$marge:7%;
+@media screen and (min-width:670px){
+    $marge:8vw;
+}
+
+
