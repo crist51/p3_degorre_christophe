@@ -226,62 +226,63 @@ body .loader .loader__bottom .loader__contener_bar .loader__bar {
   background-color: mediumaquamarine;
   color: #008b00;
   text-align: right;
-  font: normal small Roboto, sans-serif, Arial !important;
+  /*font: normal small Roboto, sans-serif, Arial !important;*/
 }
 
 /*------------------------------------------index------------------------------------------*/
 .midle__top {
   color: black;
   text-align: center;
-}
-.midle__top h2 {
-  font: bolder x-large Roboto, sans-serif, Arial;
-}
-.midle__top p {
-  font: bold medium Roboto, sans-serif, Arial;
+  /*h2{
+      font:bolder x-large Roboto, sans-serif, Arial;
+  }*/
+  /*p{
+      font:bold medium Roboto, sans-serif, Arial;
+  }*/
 }
 
-.midle__bottom h2 {
-  font: bold x-large Roboto, sans-serif, Arial;
-}
-.midle__bottom h3 {
-  font: bold large Roboto, sans-serif, Arial;
-}
-.midle__bottom p {
-  font: normal large Roboto, sans-serif, Arial;
-  color: #2c2c2c;
+.midle__bottom {
+  /*h2{
+      font: bold x-large Roboto, sans-serif, Arial;
+  }*/
+  /*h3{
+      font: bold large Roboto, sans-serif, Arial;
+  }*/
+  /**p{
+      font: normal large Roboto, sans-serif, Arial;
+      color: $colour-dark;
+  }*/
 }
 
 /*------------------------------------------restaurent------------------------------------------*/
 .midle__left h1 {
-  font: bold 28px shrikhand, sans-serif, Arial;
-  /*-xlarge*/
+  /*font: bold 28px shrikhand,sans-serif,Arial;*/
 }
 
 .midle__right .midle__right__contener__meal_part {
   width: 15%;
   padding-bottom: 5px;
   border-bottom: 2px #00fa9a6b solid;
-}
-.midle__right .midle__right__contener__meal_part h2 {
-  font: bolder large Roboto, sans-serif, Arial;
-  color: #6d6d6d;
+  /*h2{
+      font:bolder large Roboto, sans-serif, Arial;
+      color: #6d6d6d;
+  }*/
 }
 .midle__right div h3 {
   /*nom du plat*/
-  font: bolder medium Roboto, sans-serif, Arial;
+  /*font: bolder medium Roboto, sans-serif, Arial;*/
 }
 .midle__right div h4 {
   /*détail du plat*/
-  font: normal small sans-serif;
+  /*font: normal small sans-serif;*/
 }
 .midle__right div .btn_plat__price h4 {
   /*pix du plat*/
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 footer ul li {
-  font: normal medium Roboto, sans-serif, Arial;
+  /*font: normal medium  Roboto, sans-serif, Arial;*/
   color: white;
 }
 footer ul li a {
@@ -302,7 +303,7 @@ h6 {
   cursor: pointer;
 }
 .rest p, .rest h2, .command p, .command h2 {
-  font: normal large Roboto, sans-serif, Arial;
+  /*font: normal large  Roboto, sans-serif, Arial;*/
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -452,31 +453,45 @@ h6 {
   background-color: white;
 }
 .list_plat li .btn_plat .btn_plat__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 100%;
-  padding: 0 0 0 25px;
+  padding: 10px 0 10px 10px;
   overflow: hidden;
+  /*p{/*détail du plat*/
+  /*modif h4
+      margin-top: 0px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+  }*/
 }
-.list_plat li .btn_plat .btn_plat__info h3 {
+.list_plat li .btn_plat .btn_plat__info p {
   /*nom du plat*/
-  margin: 10px 0 10px 0;
+  /*modif h3*/
+  /*margin:10px 0 10px 0;*/
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin: 0;
 }
-.list_plat li .btn_plat .btn_plat__info h4 {
-  /*détail du plat*/
-  margin-top: 0px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.list_plat li .btn_plat .btn_plat__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px 0 10px 10px;
 }
-.list_plat li .btn_plat .btn_plat__price h3 {
-  margin: 10px 0 10px 0;
-  color: transparent !important;
+.list_plat li .btn_plat .btn_plat__price p {
+  /*modif h3*/
+  /*margin:10px 0 10px 0;*/
+  /*color: transparent !important;*/
+  margin: 0;
 }
-.list_plat li .btn_plat .btn_plat__price h4 {
+.list_plat li .btn_plat .btn_plat__price p {
   /*pix du plat*/
-  margin-top: 0px;
+  /*modif h4*/
+  /*margin-top: 0px;*/
 }
 .list_plat li .btn_plat .validate {
   position: relative;
@@ -493,6 +508,42 @@ h6 {
   position: relative;
   right: 20%;
   top: 30%;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.x-large {
+  font-size: x-large;
+}
+
+.large {
+  font-size: large;
+}
+
+.medium {
+  font-size: medium;
+}
+
+.small {
+  font-size: small;
+}
+
+.transparent {
+  color: transparent;
 }
 
 footer {
@@ -549,7 +600,7 @@ footer > p {
 }
 @media screen and (max-width: 618px) {
   footer {
-    padding: 0 7% 30px 7% !important;
+    padding: 0 5% 30px 5% !important;
     flex-direction: column-reverse;
     align-items: flex-start;
   }
@@ -693,7 +744,7 @@ header .container .marquee p {
 }
 .midle__top .midle__top__right {
   border: none;
-  margin: 7% 0 7% 0;
+  margin: 5% 0 5% 0;
   width: 100%;
   padding: 0 0 0 0;
   border-radius: 0;
@@ -702,7 +753,7 @@ header .container .marquee p {
 .midle__top .midle__top__right h2 {
   height: 30px;
   margin: 0;
-  padding: 0 7% 10px 7%;
+  padding: 0 5% 10px 5%;
   border: none;
   text-align: left;
 }
@@ -711,7 +762,7 @@ header .container .marquee p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 7% 0 7%;
+  padding: 0 5% 0 5%;
   align-items: flex-start;
   list-style-type: none;
 }
@@ -750,7 +801,7 @@ header .container .marquee p {
   height: min-content;
   border-radius: 0;
   background-color: #f2f2f2;
-  padding: 5% 7% 5% 7%;
+  padding: 10% 5% 10% 5%;
 }
 .midle__bottom article {
   width: 100%;
@@ -788,7 +839,7 @@ header .container .marquee p {
   .midle__top .midle__top__left {
     height: 100%;
     border-radius: 30px;
-    margin: 0 0 0 7%;
+    margin: 0 0 0 5%;
     width: 40%;
     padding: 0;
   }
@@ -798,7 +849,7 @@ header .container .marquee p {
     background-color: #f2f2f2;
     border-radius: 30px;
     padding: 0 2vw 0 2vw;
-    margin: 0 7% 0 0;
+    margin: 0 5% 0 0;
   }
   .midle__top .midle__top__right h2 {
     padding: 0 0 10px 0;
@@ -843,7 +894,7 @@ header .container .marquee p {
   }
 
   .midle__top {
-    padding: 2vh 7% 0 7%;
+    padding: 2vh 5% 0 5%;
     height: 35vh;
     background-color: white;
   }
@@ -875,7 +926,7 @@ header .container .marquee p {
   .midle__bottom {
     height: 31vh;
     background-color: white;
-    padding: 2vh 7% 0vh 7%;
+    padding: 2vh 5% 0vh 5%;
   }
   .midle__bottom article ul {
     justify-content: space-between;

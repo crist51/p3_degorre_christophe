@@ -48,7 +48,7 @@ body .bloc_pages main{
     flex-direction: column;
     background-color: $colour-gris;
     .midle__right__contener article{
-        padding: 0 7% 0 7%;
+        padding: 0 $marge 0 $marge;
         
         h2{
             margin: 0;

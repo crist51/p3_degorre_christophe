@@ -9,29 +9,39 @@
         justify-content: space-between;
         background-color: white;
         .btn_plat__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
             width: 100%;
-            padding: 0 0 0 25px;
+            padding: 10px 0 10px 10px;
             overflow: hidden;
-            h3{/*nom du plat*/
-                margin:10px 0 10px 0;
+            p{/*nom du plat*/     /*modif h3*/
+                /*margin:10px 0 10px 0;*/
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+                margin: 0;
             }
-            h4{/*détail du plat*/
+            /*p{/*détail du plat*/      /*modif h4
                 margin-top: 0px;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
-            }
+            }*/
         }
         .btn_plat__price{
-            h3{
-                margin:10px 0 10px 0;
-                color: transparent !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 10px 0 10px 10px;
+            p{  /*modif h3*/
+                /*margin:10px 0 10px 0;*/
+                
+                /*color: transparent !important;*/
+                margin: 0;
             }
-            h4{/*pix du plat*/
-                margin-top: 0px;
+            p{/*pix du plat*/  /*modif h4*/
+                /*margin-top: 0px;*/
             }
         }
         .validate{

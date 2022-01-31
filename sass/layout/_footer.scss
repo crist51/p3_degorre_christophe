@@ -51,7 +51,7 @@ footer{
 }
 @media screen and (max-width:618px){
     footer{
-        padding: 0 7% 30px 7% !important;
+        padding: 0 $marge 30px $marge !important;
         flex-direction: column-reverse;
         align-items: flex-start;
         ul{
