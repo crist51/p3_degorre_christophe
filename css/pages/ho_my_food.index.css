@@ -266,16 +266,16 @@ h3, h4, p, li {
   font-family: sans-serif, Arial, serif;
 }
 
-.new {
-  background-color: mediumaquamarine;
-  color: #008b00;
-  text-align: right;
-}
-
 /*------------------------------------------index------------------------------------------*/
 .midle__top {
   color: black;
   text-align: center;
+}
+
+.new {
+  background-color: mediumaquamarine;
+  color: #008b00;
+  text-align: right;
 }
 
 /*------------------------------------------restaurent------------------------------------------*/
