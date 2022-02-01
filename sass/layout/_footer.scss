@@ -1,21 +1,25 @@
 footer{
-    height: 11vh;
-    margin:0;
-    padding: 0 8vh 0 8vh;
+    padding: 0 $marge 30px $marge !important;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: flex-start;
     background-color:$colour-dark;
+    margin:0;
     ul{
-        margin: 0;
-        padding: 2vh 0 2vh 0;
+        width: 100%;
+        padding: 0;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
         list-style-type: none;
-        li a{
-            color: white;
-            i{
-                margin-right:15px;
+        li{
+            margin-bottom: 10px;
+            a{
+                color: white;
+                i{
+                    margin-right:15px;
+                }
             }
         }
         :nth-child(2) i{
@@ -23,44 +27,39 @@ footer{
             margin-right:8px;
         }
     }
-    >p{
-        display: none;
+    >p img{
+        filter: invert(100%);
+        width: 35%;
     }
 }
-@media screen and (max-width:912px){
+@media screen and (min-width:670px){
     footer{
-        height: 100%;
-        padding: 25px 25PX 15PX 25px;
-        flex-direction: column;
-        align-items: center;  
-        img{
-           display: inherit;
+        padding: 25px $marge 15px $marge;
+        
+        align-items: center;
+        p{
+            width: min-content;
+            img{
+               width: 270px;
+            }
         }
         ul{
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-        }
-        >p{
-            display: initial;
-            img{
-                filter: invert(100%);
-            }
+            justify-content: space-between;
+            flex-direction: row;
         }
     }
 }
-@media screen and (max-width:618px){
+@media screen and (min-width:950px){
     footer{
-        padding: 0 $marge 30px $marge !important;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        ul{
-            padding: 0;
-            align-items: flex-start;
-        }
-        >p img{
-            width: 35%;
+        margin: 0;
+        padding: 0 $marge 0 $marge;
+        flex-direction: column;
+        height: 11vh;
+        justify-content: space-between;
+        img{
+            display: none;
         }
     }
-
 }

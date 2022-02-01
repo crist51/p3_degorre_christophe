@@ -222,67 +222,74 @@ body .loader .loader__bottom .loader__contener_bar .loader__bar {
   font-family: "Roboto";
   src: url("../../font/RobotoSlab-VariableFont_wght.ttf");
 }
+.bolder {
+  font-weight: bolder;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.x-large {
+  font-size: x-large;
+}
+
+.large {
+  font-size: large;
+}
+
+.medium {
+  font-size: medium;
+}
+
+.small {
+  font-size: small;
+}
+
+.transparent {
+  color: transparent;
+}
+
+h2 {
+  font-family: Roboto, sans-serif, Arial;
+}
+
+h3, h4, p, li {
+  font-family: sans-serif, Arial, serif;
+}
+
 .new {
   background-color: mediumaquamarine;
   color: #008b00;
   text-align: right;
-  /*font: normal small Roboto, sans-serif, Arial !important;*/
 }
 
 /*------------------------------------------index------------------------------------------*/
 .midle__top {
   color: black;
   text-align: center;
-  /*h2{
-      font:bolder x-large Roboto, sans-serif, Arial;
-  }*/
-  /*p{
-      font:bold medium Roboto, sans-serif, Arial;
-  }*/
-}
-
-.midle__bottom {
-  /*h2{
-      font: bold x-large Roboto, sans-serif, Arial;
-  }*/
-  /*h3{
-      font: bold large Roboto, sans-serif, Arial;
-  }*/
-  /**p{
-      font: normal large Roboto, sans-serif, Arial;
-      color: $colour-dark;
-  }*/
 }
 
 /*------------------------------------------restaurent------------------------------------------*/
 .midle__left h1 {
-  /*font: bold 28px shrikhand,sans-serif,Arial;*/
+  font: bold 28px shrikhand, sans-serif, Arial;
 }
 
 .midle__right .midle__right__contener__meal_part {
   width: 15%;
   padding-bottom: 5px;
   border-bottom: 2px #00fa9a6b solid;
-  /*h2{
-      font:bolder large Roboto, sans-serif, Arial;
-      color: #6d6d6d;
-  }*/
-}
-.midle__right div h3 {
-  /*nom du plat*/
-  /*font: bolder medium Roboto, sans-serif, Arial;*/
-}
-.midle__right div h4 {
-  /*détail du plat*/
-  /*font: normal small sans-serif;*/
-}
-.midle__right div .btn_plat__price h4 {
-  /*pix du plat*/
-  /*font-weight: bold;*/
 }
 
 footer ul li {
-  /*font: normal medium  Roboto, sans-serif, Arial;*/
   color: white;
 }
 footer ul li a {
@@ -303,7 +310,6 @@ h6 {
   cursor: pointer;
 }
 .rest p, .rest h2, .command p, .command h2 {
-  /*font: normal large  Roboto, sans-serif, Arial;*/
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -510,57 +516,25 @@ h6 {
   top: 30%;
 }
 
-.bolder {
-  font-weight: bolder;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.normal {
-  font-weight: normal;
-}
-
-.lighter {
-  font-weight: lighter;
-}
-
-.x-large {
-  font-size: x-large;
-}
-
-.large {
-  font-size: large;
-}
-
-.medium {
-  font-size: medium;
-}
-
-.small {
-  font-size: small;
-}
-
-.transparent {
-  color: transparent;
-}
-
 footer {
-  height: 11vh;
-  margin: 0;
-  padding: 0 8vh 0 8vh;
+  padding: 0 5% 30px 5% !important;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: flex-start;
   background-color: #2c2c2c;
+  margin: 0;
 }
 footer ul {
-  margin: 0;
-  padding: 2vh 0 2vh 0;
+  width: 100%;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
   list-style-type: none;
+}
+footer ul li {
+  margin-bottom: 10px;
 }
 footer ul li a {
   color: white;
@@ -572,44 +546,39 @@ footer ul :nth-child(2) i {
   transform: rotate(145deg);
   margin-right: 8px;
 }
-footer > p {
-  display: none;
+footer > p img {
+  filter: invert(100%);
+  width: 35%;
 }
 
-@media screen and (max-width: 912px) {
+@media screen and (min-width: 670px) {
   footer {
-    height: 100%;
-    padding: 25px 25PX 15PX 25px;
-    flex-direction: column;
+    padding: 25px 5% 15px 5%;
     align-items: center;
   }
-  footer img {
-    display: inherit;
+  footer p {
+    width: min-content;
+  }
+  footer p img {
+    width: 270px;
   }
   footer ul {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-  }
-  footer > p {
-    display: initial;
-  }
-  footer > p img {
-    filter: invert(100%);
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
-@media screen and (max-width: 618px) {
+@media screen and (min-width: 950px) {
   footer {
-    padding: 0 5% 30px 5% !important;
-    flex-direction: column-reverse;
-    align-items: flex-start;
+    margin: 0;
+    padding: 0 5% 0 5%;
+    flex-direction: column;
+    height: 11vh;
+    justify-content: space-between;
   }
-  footer ul {
-    padding: 0;
-    align-items: flex-start;
-  }
-  footer > p img {
-    width: 35%;
+  footer img {
+    display: none;
   }
 }
 header {
@@ -693,6 +662,7 @@ header .container .marquee p {
     display: flex;
     flex-direction: column;
     background-color: transparent;
+    justify-content: center;
   }
   header h1, header h1 a {
     width: 100%;
