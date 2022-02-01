@@ -130,7 +130,6 @@ body .loader .loader__top .loader__circle {
 body .loader .loader__top p {
   border: 5px #9356DC double;
   padding: 10px;
-  font: lighter 28px shrikhand, TheNautigal, sans-serif, Arial;
   margin: 0 0 0 0;
   text-align: center;
   position: absolute;
@@ -265,7 +264,15 @@ h3, h4, p, li {
   font-family: sans-serif, Arial, serif;
 }
 
+header h1 {
+  font: bolder xx-large shrikhand, TheNautigal, sans-serif;
+}
+
 /*------------------------------------------index------------------------------------------*/
+.loader__top p {
+  font: lighter 28px shrikhand, TheNautigal, sans-serif, Arial;
+}
+
 .midle__top {
   color: black;
   text-align: center;
@@ -447,8 +454,6 @@ h6 {
 }
 .list_plat li {
   border-radius: 10px;
-  width: 100%;
-  height: 70px;
   overflow: hidden;
 }
 .list_plat li .btn_plat {
@@ -476,8 +481,8 @@ h6 {
   /*partit prix*/
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 10px 0 10px 10px;
+  justify-content: flex-end;
+  padding: 10px 0 15px 10px;
 }
 .list_plat li .btn_plat .btn_plat__price p {
   margin: 0;
@@ -577,7 +582,6 @@ header h1 {
   color: white;
   margin: 0;
   padding: 0;
-  font: bolder xx-large shrikhand, TheNautigal, sans-serif;
 }
 header h1 a {
   text-decoration: none;
