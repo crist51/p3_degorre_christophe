@@ -209,8 +209,8 @@ body .loader .loader__bottom .loader__contener_bar .loader__bar {
   }
 }
 @font-face {
-  font-family: "shrikhand";
-  src: url("../../font/shrikhand-Regular.ttf");
+  font-family: "Shrikhand";
+  src: url("../../font/Shrikhand-Regular.ttf");
 }
 @font-face {
   font-family: "TheNautigal";
@@ -265,12 +265,12 @@ h3, h4, p, li {
 }
 
 header h1 {
-  font: bolder xx-large shrikhand, TheNautigal, sans-serif;
+  font: bolder xx-large Shrikhand, TheNautigal, sans-serif;
 }
 
 /*------------------------------------------index------------------------------------------*/
 .loader__top p {
-  font: lighter 28px shrikhand, TheNautigal, sans-serif, Arial;
+  font: lighter 28px Shrikhand, TheNautigal, sans-serif, Arial;
 }
 
 .midle__top {
@@ -286,7 +286,7 @@ header h1 {
 
 /*------------------------------------------restaurent------------------------------------------*/
 .midle__left .h1 {
-  font: bold 28px shrikhand, sans-serif, Arial;
+  font: bold 28px Shrikhand, sans-serif, Arial;
 }
 
 .midle__right .midle__right__contener__meal_part {
