@@ -6,9 +6,3 @@ Pour faire fonctionner le MQueries
 
 <link rel="icon" type="image/png" href="../images/logo/ohmyfood@2x.svg">
 link logo dans la barre d'adresse
-
-filter: invert(100%)
-inverse le contraste
-
-/*transition-delay: 400ms; delais d'attente avent activation*/
-/*transform-origin: left;permet de reduire huste la droite*/
