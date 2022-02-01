@@ -279,7 +279,7 @@ h3, h4, p, li {
 }
 
 /*------------------------------------------restaurent------------------------------------------*/
-.midle__left h1 {
+.midle__left .h1 {
   font: bold 28px shrikhand, sans-serif, Arial;
 }
 
@@ -724,7 +724,7 @@ body .bloc_pages main .corp {
   background-color: #f2f2f2;
   border-radius: 30px 30px 0 0;
 }
-.midle__left .midle__left__titre h1 {
+.midle__left .midle__left__titre .h1 {
   margin: 0;
   padding-left: 7%;
 }
@@ -765,7 +765,7 @@ body .bloc_pages main .corp {
   .midle__left {
     padding-bottom: 50px;
   }
-  .midle__left .midle__left__titre h1 {
+  .midle__left .midle__left__titre .h1 {
     width: 100vw;
     text-align: center;
   }
