@@ -8,40 +8,27 @@
         display: flex;
         justify-content: space-between;
         background-color: white;
-        .btn_plat__info{
+        .btn_plat__info{/*partit plat*/
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             width: 100%;
             padding: 10px 0 10px 10px;
             overflow: hidden;
-            p{/*nom du plat*/     /*modif h3*/
-                /*margin:10px 0 10px 0;*/
+            p{
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 margin: 0;
             }
-            /*p{/*détail du plat*/      /*modif h4
-                margin-top: 0px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }*/
         }
-        .btn_plat__price{
+        .btn_plat__price{/*partit prix*/
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             padding: 10px 0 10px 10px;
-            p{  /*modif h3*/
-                /*margin:10px 0 10px 0;*/
-                
-                /*color: transparent !important;*/
+            p{
                 margin: 0;
-            }
-            p{/*pix du plat*/  /*modif h4*/
-                /*margin-top: 0px;*/
             }
         }
         .validate{
