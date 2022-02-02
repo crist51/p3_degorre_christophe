@@ -59,7 +59,7 @@
   transform: translate(-50px);
   transition: transform 2s;
   width: 40px;
-  transition: width 1s ease 0s;
+  transition: width 1s linear 0s;
 }
 .list_plat li:hover .btn_plat .validate i {
   transform: rotate(360deg);
@@ -245,7 +245,7 @@ body .loader .loader__bottom .loader__contener_bar .loader__bar {
 }
 
 .medium {
-  font-size: medium;
+  font-size: 15px;
 }
 
 .small {

@@ -47,7 +47,7 @@
                 transform: translate(-50px);
                 transition:transform 2s;
                 width: 40px;
-                transition : width 1s ease 0s ;
+                transition : width 1s linear 0s;
                 i{
                     transform: rotate(360deg);
                     transition: transform 500ms;
