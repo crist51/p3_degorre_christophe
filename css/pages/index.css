@@ -55,25 +55,37 @@
 .list_plat li:hover .btn_plat {
   cursor: pointer;
 }
-.list_plat li:hover .btn_plat .validate {
+.list_plat li:hover .btn_plat .btn_plat__info {
+  animation: reduction 750ms linear 0s 1 normal forwards;
+}
+.list_plat li:hover .btn_plat .validate, .list_plat li:hover .btn_plat .btn_plat__price {
   transform: translate(-50px);
-  transition: transform 2s;
-  width: 40px;
-  transition: width 1s linear 0s;
+  width: 30px;
+  transition: width 750ms linear 0s;
 }
-.list_plat li:hover .btn_plat .validate i {
+.list_plat li:hover .btn_plat .validate i, .list_plat li:hover .btn_plat .btn_plat__price i {
   transform: rotate(360deg);
-  transition: transform 500ms;
-}
-.list_plat li:not(:hover) .validate {
-  width: 0;
-  transition: transform 2s;
-}
-.list_plat li:not(:hover) .validate i {
-  transform: rotate(0deg);
   transition: transform 1s;
 }
+.list_plat li:not(:hover) .validate, .list_plat li:not(:hover) .btn_plat__price {
+  width: 0;
+  transition: transform 750ms;
+}
+.list_plat li:not(:hover) .validate i, .list_plat li:not(:hover) .btn_plat__price i {
+  transform: rotate(0deg);
+  transition: transform 2s;
+}
 
+@keyframes reduction {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+}
 /*---------------------------------------------------------------------------------------------------*/
 header .marquee p {
   animation: info-societe 30s linear 5s infinite normal forwards;
@@ -245,7 +257,7 @@ body .loader .loader__bottom .loader__contener_bar .loader__bar {
 }
 
 .medium {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .small {
@@ -479,29 +491,34 @@ h6 {
 }
 .list_plat li .btn_plat .btn_plat__price {
   /*partit prix*/
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 10px 0 15px 10px;
+  position: relative;
+  margin-right: 7px;
+  position: absolute;
+  right: 27px;
+  top: 28px;
 }
 .list_plat li .btn_plat .btn_plat__price p {
   margin: 0;
 }
 .list_plat li .btn_plat .validate {
   position: relative;
-  width: 0;
-  left: 50px;
+  width: 0px;
+  left: 55px;
   background-color: #00fa9a6b;
-  padding: 0 5px 0 15px;
-  margin: 0 0 0 15px;
+  padding: 0 15px 0 30px;
+  margin: 0 0 0 38px;
   height: 70px;
+  display: flex;
+  align-items: center;
 }
 .list_plat li .btn_plat .validate i {
+  position: relative;
+  left: -32%;
   color: white;
   font-size: 30px;
-  position: relative;
-  right: 20%;
-  top: 30%;
 }
 
 footer {
