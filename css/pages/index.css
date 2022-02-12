@@ -565,7 +565,10 @@ footer > p img {
     height: 11vh;
     justify-content: space-between;
   }
-  footer img {
+  footer ul {
+    height: 50%;
+  }
+  footer p {
     display: none;
   }
 }

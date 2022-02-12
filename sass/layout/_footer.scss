@@ -58,7 +58,10 @@ footer{
         flex-direction: column;
         height: 11vh;
         justify-content: space-between;
-        img{
+        ul{
+            height: 50%;
+        }
+        p{
             display: none;
         }
     }
