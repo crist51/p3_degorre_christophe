@@ -443,7 +443,7 @@ h6 {
 
 @media screen and (min-width: 950px) {
   .midle__bottom article ul li .bloc_food > :first-child {
-    height: 60% !important;
+    height: 70% !important;
   }
   .midle__bottom article ul li .bloc_food .info_food {
     margin: 10px 0 10px 0;
